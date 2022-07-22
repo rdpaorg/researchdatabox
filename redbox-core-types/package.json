@@ -1,0 +1,53 @@
+{
+  "_args": [
+    [
+      "@researchdatabox/redbox-core-types@1.0.8",
+      "/home/vagrant/src/rdpa-redbox-portal"
+    ]
+  ],
+  "_from": "@researchdatabox/redbox-core-types@1.0.8",
+  "_id": "@researchdatabox/redbox-core-types@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-VvdP8UUqy+oF99s6ady+9BmLf3HPVCKgG+eQ3UTFYg5MWX0QDi/NHfpvQ35k8ACnrUk8LVenco61u9IeV0gJlQ==",
+  "_location": "/@researchdatabox/redbox-core-types",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@researchdatabox/redbox-core-types@1.0.8",
+    "name": "@researchdatabox/redbox-core-types",
+    "escapedName": "@researchdatabox%2fredbox-core-types",
+    "scope": "@researchdatabox",
+    "rawSpec": "1.0.8",
+    "saveSpec": null,
+    "fetchSpec": "1.0.8"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@researchdatabox/redbox-core-types/-/redbox-core-types-1.0.8.tgz",
+  "_spec": "1.0.8",
+  "_where": "/home/vagrant/src/rdpa-redbox-portal",
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "path-exists": "^4.0.0",
+    "rxjs": "^6.6.2",
+    "rxjs-compat": "^6.6.7",
+    "stream": "0.0.2",
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "/dist"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "@researchdatabox/redbox-core-types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "version": "1.0.8"
+}

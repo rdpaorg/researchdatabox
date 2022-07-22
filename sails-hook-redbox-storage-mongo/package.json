@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      "@researchdatabox/sails-hook-redbox-storage-mongo@1.1.5-alpha",
+      "/home/vagrant/src/rdpa-redbox-portal"
+    ]
+  ],
+  "_from": "@researchdatabox/sails-hook-redbox-storage-mongo@1.1.5-alpha",
+  "_id": "@researchdatabox/sails-hook-redbox-storage-mongo@1.1.5-alpha",
+  "_inBundle": false,
+  "_integrity": "sha512-5QBA2HMBQDVOtIBtZt/9hHWvtneDT42X2iIc/1zclL6talvzWrHG5U+ium7WtJGTiEYruNKPKB7mc8nubA+cmQ==",
+  "_location": "/@researchdatabox/sails-hook-redbox-storage-mongo",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@researchdatabox/sails-hook-redbox-storage-mongo@1.1.5-alpha",
+    "name": "@researchdatabox/sails-hook-redbox-storage-mongo",
+    "escapedName": "@researchdatabox%2fsails-hook-redbox-storage-mongo",
+    "scope": "@researchdatabox",
+    "rawSpec": "1.1.5-alpha",
+    "saveSpec": null,
+    "fetchSpec": "1.1.5-alpha"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@researchdatabox/sails-hook-redbox-storage-mongo/-/sails-hook-redbox-storage-mongo-1.1.5-alpha.tgz",
+  "_spec": "1.1.5-alpha",
+  "_where": "/home/vagrant/src/rdpa-redbox-portal",
+  "author": {
+    "name": "QCIF Engineering dev@redboxresearchdata.com.au"
+  },
+  "bugs": {
+    "url": "https://github.com/redbox-mint/sails-hook-redbox-storage-mongo/issues"
+  },
+  "dependencies": {
+    "json2csv": "^5.0.3",
+    "lodash": "^4.17.20",
+    "uuid": "8.3.0"
+  },
+  "description": "A MongoDB storage plugin for ReDBox.",
+  "devDependencies": {
+    "@researchdatabox/redbox-core-types": "^1.0.3-beta",
+    "@types/chai": "^4.2.12",
+    "@types/lodash": "^4.14.159",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "fs": "0.0.1-security",
+    "mocha": "^8.1.1",
+    "moment": "^2.29.1",
+    "mongodb": "^4.0.1",
+    "rxjs": "^6.6.2",
+    "rxjs-compat": "^6.6.7",
+    "sails": "^1.2.5",
+    "stream": "0.0.2",
+    "typescript": "^4.0.2",
+    "util": "^0.12.4"
+  },
+  "homepage": "https://github.com/redbox-mint/sails-hook-redbox-storage-mongo#readme",
+  "keywords": [
+    "sails",
+    "hook",
+    "redbox",
+    "redbox research",
+    "redbox storage",
+    "redbox mongodb"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "name": "@researchdatabox/sails-hook-redbox-storage-mongo",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbox-mint/sails-hook-redbox-storage-mongo.git"
+  },
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "installHook": "docker run -v $(pwd):/opt/sailshook qcifengineering/redbox-portal /bin/bash -c 'cd /opt/redbox-portal;yarn add  \"file:/opt/sailshook\"'; docker commit $(docker ps -lq) redboxportalwithhook",
+    "runDev": "docker-compose -f support/development/docker-compose.yml up",
+    "test": "NODE_ENV=test; mocha"
+  },
+  "version": "1.1.5-alpha"
+}
